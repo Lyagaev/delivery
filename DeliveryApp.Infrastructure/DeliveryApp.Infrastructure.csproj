@@ -25,4 +25,8 @@
       <ProjectReference Include="..\Utils\Primitives\Primitives.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Adapters\Postgres\" />
+    </ItemGroup>
+
 </Project>
