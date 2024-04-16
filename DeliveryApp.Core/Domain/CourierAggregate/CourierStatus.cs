@@ -29,7 +29,7 @@ namespace DeliveryApp.Core.Domain.CourierAggregate
         /// <returns></returns>
         public CourierStatus NotAvailable()
         {
-            return new CourierStatus("недоступен");
+            return new CourierStatus("NotAvailable");
         }
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace DeliveryApp.Core.Domain.CourierAggregate
         /// <returns></returns>
         public CourierStatus Ready()
         {
-            return new CourierStatus("готов к работе");
+            return new CourierStatus("Ready");
         }
 
         /// <summary>
@@ -47,7 +47,7 @@ namespace DeliveryApp.Core.Domain.CourierAggregate
         /// <returns></returns>
         public CourierStatus Busy()
         {
-            return new CourierStatus("выполняет заказ, занят");
+            return new CourierStatus("Busy");
         }
 
         protected override IEnumerable<IComparable> GetEqualityComponents()
